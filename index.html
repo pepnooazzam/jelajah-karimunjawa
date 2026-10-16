@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jelajah Karimunjawa | Pemandu Wisata & Open Trip Kepulauan Karimunjawa</title>
+  <meta name="description"
+    content="Pemandu wisata resmi Jelajah Karimunjawa. Nikmati island hopping, snorkeling terumbu karang, penangkaran hiu, sunset Tanjung Gelam, serta paket open trip dan private tour tropis terlengkap.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar (Fixed with Drop-Shadow, Desktop Full-Width, Responsive CTA) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="#beranda" class="nav-brand">
+        <svg class="brand-icon-svg" viewBox="0 0 24 24">
+          <path d="M2 18c3-1.5 6-1.5 9 0s6 1.5 9 0 2-1 2-1" />
+          <path d="M2 14c3-1.5 6-1.5 9 0s6 1.5 9 0 2-1 2-1" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <span>Jelajah <span class="brand-accent">Karimunjawa</span></span>
+      </a>
+
+      <!-- Pure CSS Hamburger Checkbox Trigger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Navigation Menu (Desktop Flexbox / Mobile Drawer with CTA inside) -->
+      <nav class="nav-menu">
+        <a href="#beranda" class="nav-link">Beranda</a>
+        <a href="#hidden-gems" class="nav-link">Peta Hidden Gems</a>
+        <a href="#paket" class="nav-link">Paket Wisata</a>
+        <a href="#keunggulan" class="nav-link">Pengalaman</a>
+        <a href="gallery.html" class="nav-link nav-link-gallery">Galeri Foto</a>
+        <a href="#reservasi" class="nav-link">Reservasi</a>
+
+        <!-- CTA moved inside Hamburger Menu for Tablet and Mobile -->
+        <div class="nav-mobile-cta">
+          <a href="#reservasi" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </nav>
+
+      <!-- Desktop-Only Primary Action at Navbar -->
+      <div class="nav-desktop-actions">
+        <a href="#reservasi" class="btn-primary">Pesan Sekarang</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="beranda" class="hero-section">
+    <div class="hero-background-wrapper">
+      <img src="images/hero.jpg" alt="Pemandangan Tropis Pulau Karimunjawa" class="hero-bg-img"
+        referrerpolicy="no-referrer">
+      <div class="hero-overlay-scrim"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-content">
+        <span class="hero-tag">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polygon
+              points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2">
+            </polygon>
+          </svg>
+          Tour Guide Resmi & Terpercaya Sejak 2018
+        </span>
+        <h1 class="hero-title">Jelajahi Pesona Surga <span>Kepulauan Karimunjawa</span></h1>
+        <p class="hero-desc">
+          Nikmati petualangan eksotis pulau tropis bersama pemandu lokal berlisensi. Snorkeling di terumbu karang alami,
+          berenang dengan hiu jinak, jelajahi gosong pasir putih, dan saksikan sunset terindah Laut Jawa.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#paket" class="btn-primary">Pilih Paket Wisata</a>
+          <a href="#hidden-gems" class="btn-secondary">Eksplor Peta Destinasi</a>
+        </div>
+
+        <div class="hero-stats-strip">
+          <div class="stat-item">
+            <span class="stat-number">27+</span>
+            <span class="stat-label">Gugusan Pulau Tropis</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">4.9 / 5</span>
+            <span class="stat-label">Rating 2.400+ Wisatawan</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number">100%</span>
+            <span class="stat-label">Pemandu Lokal Berlisensi</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Map with Hidden Gems (Pure CSS Toggle: Click again returns to previous map) -->
+  <section id="hidden-gems" class="gems-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-kicker">Destinasi Favorit & Rahasia</span>
+        <h2 class="section-title">Peta Interaktif Hidden Gems Karimunjawa</h2>
+        <p class="section-desc center-block">
+          Klik tombol destinasi di bawah untuk melihat rincian lokasi. Klik kembali tombol yang aktif untuk menutup dan
+          kembali ke tampilan peta awal.
+        </p>
+      </div>
+
+      <!-- Hidden Radio Inputs for Pure CSS Map State -->
+      <input type="radio" name="gem-select" id="gem-overview" class="gem-radio" checked>
+      <input type="radio" name="gem-select" id="gem-tanjung" class="gem-radio">
+      <input type="radio" name="gem-select" id="gem-menjangan" class="gem-radio">
+      <input type="radio" name="gem-select" id="gem-cemara" class="gem-radio">
+      <input type="radio" name="gem-select" id="gem-bukit" class="gem-radio">
+      <input type="radio" name="gem-select" id="gem-cilik" class="gem-radio">
+
+      <!-- 5 Prominent Fixed Buttons with Toggle Return Mechanism -->
+      <div class="gem-selector-tabs">
+        <!-- Button 1: Tanjung Gelam (Click again triggers gem-overview) -->
+        <label for="gem-tanjung" class="gem-tab-label tab-tanjung-open">
+          <span class="gem-tab-num">1</span>
+          <span>Tanjung Gelam</span>
+        </label>
+        <label for="gem-overview" class="gem-tab-label tab-tanjung-close" title="Klik untuk kembali ke peta awal">
+          <span class="gem-tab-num">1</span>
+          <span>Tanjung Gelam</span>
+        </label>
+
+        <!-- Button 2: Menjangan Kecil -->
+        <label for="gem-menjangan" class="gem-tab-label tab-menjangan-open">
+          <span class="gem-tab-num">2</span>
+          <span>Menjangan Kecil</span>
+        </label>
+        <label for="gem-overview" class="gem-tab-label tab-menjangan-close" title="Klik untuk kembali ke peta awal">
+          <span class="gem-tab-num">2</span>
+          <span>Menjangan Kecil</span>
+        </label>
+
+        <!-- Button 3: Cemara Kecil -->
+        <label for="gem-cemara" class="gem-tab-label tab-cemara-open">
+          <span class="gem-tab-num">3</span>
+          <span>Cemara Kecil</span>
+        </label>
+        <label for="gem-overview" class="gem-tab-label tab-cemara-close" title="Klik untuk kembali ke peta awal">
+          <span class="gem-tab-num">3</span>
+          <span>Cemara Kecil</span>
+        </label>
+
+        <!-- Button 4: Bukit Love -->
+        <label for="gem-bukit" class="gem-tab-label tab-bukit-open">
+          <span class="gem-tab-num">4</span>
+          <span>Bukit Love</span>
+        </label>
+        <label for="gem-overview" class="gem-tab-label tab-bukit-close" title="Klik untuk kembali ke peta awal">
+          <span class="gem-tab-num">4</span>
+          <span>Bukit Love</span>
+        </label>
+
+        <!-- Button 5: Pulau Cilik -->
+        <label for="gem-cilik" class="gem-tab-label tab-cilik-open">
+          <span class="gem-tab-num">5</span>
+          <span>Pulau Cilik</span>
+        </label>
+        <label for="gem-overview" class="gem-tab-label tab-cilik-close" title="Klik untuk kembali ke peta awal">
+          <span class="gem-tab-num">5</span>
+          <span>Pulau Cilik</span>
+        </label>
+      </div>
+
+      <div class="gems-interactive-container">
+        <!-- Interactive Realistic Map Canvas (Google Maps Cartography 80%+ Accuracy) -->
+        <div class="map-canvas-card">
+          <div class="map-grid-overlay"></div>
+
+          <!-- Archipelago Vector Graphic Representation (80%+ Realistic Island Geometries) -->
+          <svg class="map-archipelago-svg" viewBox="0 0 800 550" preserveAspectRatio="none">
+            <defs>
+              <!-- Bathymetry Gradients -->
+              <radialGradient id="lagoon-karimun" cx="40%" cy="50%" r="55%">
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.5" />
+                <stop offset="65%" stop-color="#0284c7" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="lagoon-cilik" cx="80%" cy="35%" r="20%">
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+                <stop offset="60%" stop-color="#0284c7" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="lagoon-menjangan" cx="35%" cy="78%" r="22%">
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.65" />
+                <stop offset="65%" stop-color="#0284c7" stop-opacity="0.2" />
+                <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+              </radialGradient>
+              <radialGradient id="lagoon-cemara" cx="20%" cy="50%" r="22%">
+                <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.6" />
+                <stop offset="60%" stop-color="#0284c7" stop-opacity="0.2" />
+                <stop offset="100%" stop-color="#0369a1" stop-opacity="0" />
+              </radialGradient>
+
+              <!-- Land Topography Gradient -->
+              <linearGradient id="karimun-land" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#40916c" />
+                <stop offset="45%" stop-color="#2d6a4f" />
+                <stop offset="100%" stop-color="#1b4332" />
+              </linearGradient>
+              <linearGradient id="kemujan-land" x1="0%" y1="100%" x2="100%" y2="0%">
+                <stop offset="0%" stop-color="#52b788" />
+                <stop offset="100%" stop-color="#2d6a4f" />
+              </linearGradient>
+
+              <!-- Island Dropshadow -->
+              <filter id="island-shadow" x="-8%" y="-8%" width="120%" height="120%">
+                <feDropShadow dx="1" dy="3" stdDeviation="3" flood-color="#022a5e" flood-opacity="0.45" />
+              </filter>
+            </defs>
+
+            <!-- 1. Deep Ocean Java Sea Bathymetric Layer -->
+            <path d="M 20 50 Q 250 20 480 30 T 780 70 Q 760 480 500 520 T 30 490 Z" fill="rgba(255, 255, 255, 0.04)" />
+            <path d="M 60 90 Q 280 50 510 65 T 740 100 Q 720 440 470 485 T 70 440 Z" fill="rgba(0, 180, 216, 0.12)" />
+
+            <!-- 2. Coral Reef & Shallow Lagoon Shelf Around Island Clusters (Turquoise Google Maps Shallows) -->
+            <!-- Main Island Reef Shelf -->
+            <ellipse cx="370" cy="270" rx="145" ry="195" fill="url(#lagoon-karimun)" />
+            <!-- Menjangan Archipelago Reef Shelf -->
+            <ellipse cx="285" cy="435" rx="72" ry="48" fill="url(#lagoon-menjangan)" />
+            <path d="M 220 415 Q 260 395 340 405 Q 355 450 330 485 Q 270 480 225 455 Z" fill="none" stroke="#38bdf8"
+              stroke-dasharray="3,3" stroke-width="1.5" opacity="0.6" />
+            <!-- Cemara Sandbank Reef Shelf -->
+            <ellipse cx="170" cy="275" rx="65" ry="42" fill="url(#lagoon-cemara)" />
+            <path d="M 115 265 Q 160 235 220 245 Q 225 290 185 315 Q 120 310 115 265 Z" fill="none" stroke="#38bdf8"
+              stroke-dasharray="3,3" stroke-width="1.5" opacity="0.6" />
+            <!-- East Atolls Reef Shelf (Pulau Cilik & Tengah) -->
+            <ellipse cx="685" cy="205" rx="75" ry="45" fill="url(#lagoon-cilik)" />
+            <path d="M 625 185 Q 670 160 745 190 Q 750 245 690 255 Q 630 240 625 185 Z" fill="none" stroke="#38bdf8"
+              stroke-dasharray="3,3" stroke-width="1.5" opacity="0.6" />
+
+            <!-- 3. Real Archipelago Islands (Realistic Geographies) -->
+            <!-- PULAU BENGKOANG & MENYAWAKAN (Northwest Outposts) -->
+            <g id="nw-islands">
+              <path d="M 120 95 C 130 96, 136 104, 132 112 C 126 118, 116 116, 114 108 C 113 101, 116 95, 120 95 Z"
+                fill="#2d6a4f" stroke="#fde047" stroke-width="1.5" />
+              <text x="125" y="88" fill="rgba(255,255,255,0.7)" font-size="8.5" font-weight="600"
+                text-anchor="middle">P. Bengkoang</text>
+              <!-- Pulau Menyawakan (Kura Kura Resort) -->
+              <path d="M 180 128 C 190 130, 194 140, 188 147 C 180 152, 172 148, 171 140 C 170 132, 174 127, 180 128 Z"
+                fill="#2d6a4f" stroke="#fde047" stroke-width="1.5" filter="url(#island-shadow)" />
+              <text x="180" y="122" fill="rgba(255,255,255,0.85)" font-size="9" font-weight="600"
+                text-anchor="middle">P. Menyawakan</text>
+            </g>
+
+            <!-- PULAU GELEANG (West-Southwest) -->
+            <g id="isle-geleang">
+              <path d="M 165 410 C 178 412, 184 424, 178 432 C 168 438, 156 434, 154 423 C 153 414, 159 409, 165 410 Z"
+                fill="#2d6a4f" stroke="#fef08a" stroke-width="2" filter="url(#island-shadow)" />
+              <text x="166" y="445" fill="rgba(255,255,255,0.8)" font-size="9" font-weight="600" text-anchor="middle">P.
+                Geleang</text>
+            </g>
+
+            <!-- PULAU CEMARA BESAR & PULAU CEMARA KECIL (West) -->
+            <g id="isles-cemara">
+              <!-- Pulau Cemara Besar (Kidney/Crescent shaped lush island) -->
+              <path d="M 142 258 C 156 260, 164 274, 158 292 C 150 302, 134 300, 128 286 C 125 272, 132 260, 142 258 Z"
+                fill="#2d6a4f" stroke="#fef08a" stroke-width="2.2" filter="url(#island-shadow)" />
+              <text x="140" y="250" fill="rgba(255,255,255,0.85)" font-size="9" font-weight="600"
+                text-anchor="middle">P. Cemara Besar</text>
+
+              <!-- Pulau Cemara Kecil (Sandbar & Destination #3) -->
+              <!-- Sandy spit extending between Cemara Besar and Cemara Kecil -->
+              <path d="M 185 268 Q 172 276 160 282 Q 170 270 185 268" fill="#fef08a" opacity="0.9" />
+              <path d="M 195 250 C 204 253, 208 264, 202 272 C 196 277, 188 276, 185 268 C 184 260, 189 252, 195 250 Z"
+                fill="#40916c" stroke="#fef08a" stroke-width="2.5" filter="url(#island-shadow)" />
+              <!-- Sandbar halo -->
+              <ellipse cx="195" cy="265" rx="16" ry="10" fill="none" stroke="#fef08a" stroke-dasharray="2,2"
+                stroke-width="1.2" />
+              <text x="195" y="242" fill="#fef08a" font-size="10" font-weight="800" text-anchor="middle">P. Cemara Kecil
+                🏖️</text>
+            </g>
+
+            <!-- PULAU MENJANGAN BESAR & MENJANGAN KECIL (South) -->
+            <g id="isles-menjangan">
+              <!-- Pulau Menjangan Besar (Elongated North-South with Shark Pen) -->
+              <path d="M 314 430 C 324 432, 330 445, 328 460 C 325 472, 318 478, 310 475 C 304 468, 305 450, 308 438 Z"
+                fill="#2d6a4f" stroke="#fef08a" stroke-width="2.2" filter="url(#island-shadow)" />
+              <!-- Shark Pen (Penangkaran Hiu) Floating Enclosure -->
+              <rect x="323" y="445" width="8" height="8" fill="none" stroke="#ea580c" stroke-width="1.5" />
+              <text x="345" y="456" fill="#fed7aa" font-size="8.5" font-weight="700">Shark Pen 🦈</text>
+              <text x="316" y="490" fill="rgba(255,255,255,0.85)" font-size="9" font-weight="600"
+                text-anchor="middle">P. Menjangan Besar</text>
+
+              <!-- Pulau Menjangan Kecil (Destination #2) -->
+              <path d="M 255 414 C 265 418, 270 428, 266 438 C 260 445, 250 444, 245 436 C 242 426, 246 416, 255 414 Z"
+                fill="#40916c" stroke="#fef08a" stroke-width="2.5" filter="url(#island-shadow)" />
+              <circle cx="255" cy="425" r="14" fill="none" stroke="#38bdf8" stroke-dasharray="3,3" stroke-width="1.5" />
+              <text x="255" y="405" fill="#fef08a" font-size="10" font-weight="800" text-anchor="middle">P. Menjangan
+                Kecil 🤿</text>
+            </g>
+
+            <!-- MAIN LANDMASS: PULAU KARIMUNJAWA & PULAU KEMUJAN (Real Google Maps Island Silhouette) -->
+            <g id="main-karimunjawa-kemujan">
+              <!-- 1. Sandy Beach Rim for Karimunjawa (Stroke creates realistic coastal sand border) -->
+              <path
+                d="M 345 405 C 332 402, 318 392, 305 378 C 292 362, 284 340, 278 315 C 274 290, 272 268, 268 252 C 260 250, 246 244, 245 237 C 246 230, 256 227, 268 226 C 282 225, 298 220, 310 205 C 320 188, 330 170, 348 155 C 368 144, 388 138, 408 140 C 414 148, 418 165, 424 190 C 426 210, 415 228, 396 245 C 388 255, 396 275, 404 300 C 408 325, 405 355, 395 375 C 384 392, 368 404, 345 405 Z"
+                fill="#fef08a" stroke="#fef08a" stroke-width="6" stroke-linejoin="round" filter="url(#island-shadow)" />
+
+              <!-- 2. Main Landmass Fill for Pulau Karimunjawa -->
+              <path
+                d="M 345 405 C 332 402, 318 392, 305 378 C 292 362, 284 340, 278 315 C 274 290, 272 268, 268 252 C 260 250, 246 244, 245 237 C 246 230, 256 227, 268 226 C 282 225, 298 220, 310 205 C 320 188, 330 170, 348 155 C 368 144, 388 138, 408 140 C 414 148, 418 165, 424 190 C 426 210, 415 228, 396 245 C 388 255, 396 275, 404 300 C 408 325, 405 355, 395 375 C 384 392, 368 404, 345 405 Z"
+                fill="url(#karimun-land)" stroke="#2d6a4f" stroke-width="1.5" stroke-linejoin="round" />
+
+              <!-- Interior Mountain Topography: Gunung Gajah (506m) -->
+              <ellipse cx="356" cy="215" rx="36" ry="46" fill="#1b4332" opacity="0.6" />
+              <ellipse cx="356" cy="215" rx="22" ry="28" fill="#0d2818" opacity="0.5" />
+              <path d="M 356 200 L 362 210 L 350 210 Z" fill="#fde047" />
+              <text x="356" y="196" fill="#fde047" font-size="8.5" font-weight="700" text-anchor="middle">▲ Gn. Gajah
+                506m</text>
+
+              <!-- Interior Mountain Topography: Bukit Joko Tuwo & Bukit Bendera -->
+              <ellipse cx="372" cy="320" rx="22" ry="30" fill="#1b4332" opacity="0.5" />
+
+              <!-- Destination #4: Bukit Love Overlooking Town -->
+              <circle cx="365" cy="370" r="10" fill="#1b4332" opacity="0.75" />
+              <text x="390" y="365" fill="#fef08a" font-size="9.5" font-weight="800">Bukit Love 💚</text>
+
+              <!-- Destination #1: Tanjung Gelam (Iconic Hooked Cape & Coconut Palms) -->
+              <text x="235" y="222" fill="#fef08a" font-size="10" font-weight="800" text-anchor="middle">Tanjung Gelam
+                🌴</text>
+              <ellipse cx="248" cy="236" rx="9" ry="6" fill="#fde047" />
+
+              <!-- Teluk Legon Lele Bay Label -->
+              <text x="408" y="248" fill="rgba(255,255,255,0.75)" font-size="8" class="map-label-italic">Teluk Legon
+                Lele</text>
+
+              <!-- Karimunjawa Town Settlement Footprint & Port -->
+              <rect x="338" y="380" width="18" height="14" rx="2" fill="#fed7aa" opacity="0.85" />
+              <!-- Pelabuhan Pier (Dermaga Wisata / Kartini) -->
+              <line x1="344" y1="400" x2="335" y2="414" stroke="#78350f" stroke-width="3" stroke-linecap="round" />
+              <line x1="330" y1="410" x2="340" y2="418" stroke="#78350f" stroke-width="2.5" stroke-linecap="round" />
+              <text x="340" y="426" fill="#fef08a" font-size="9" font-weight="700" text-anchor="middle">Pelabuhan
+                ⚓</text>
+
+              <!-- 3. PULAU KEMUJAN (Attached to Northeast via Mangrove Creek) -->
+              <!-- Kemujan Sandy Beach Rim -->
+              <path
+                d="M 408 140 C 414 122, 422 104, 434 88 C 450 72, 470 60, 485 55 C 496 52, 506 58, 508 70 C 506 88, 496 108, 485 125 C 472 142, 452 155, 436 156 C 422 154, 412 148, 408 140 Z"
+                fill="#fef08a" stroke="#fef08a" stroke-width="6" stroke-linejoin="round" filter="url(#island-shadow)" />
+              <!-- Kemujan Landmass -->
+              <path
+                d="M 408 140 C 414 122, 422 104, 434 88 C 450 72, 470 60, 485 55 C 496 52, 506 58, 508 70 C 506 88, 496 108, 485 125 C 472 142, 452 155, 436 156 C 422 154, 412 148, 408 140 Z"
+                fill="url(#kemujan-land)" stroke="#2d6a4f" stroke-width="1.5" stroke-linejoin="round" />
+
+              <!-- Bandara Dewadaru (KWB) Airport Runway (True 01/19 orientation) -->
+              <g id="dewadaru-runway">
+                <line x1="466" y1="88" x2="456" y2="124" stroke="#1e293b" stroke-width="5" stroke-linecap="square" />
+                <line x1="466" y1="88" x2="456" y2="124" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="3,3" />
+                <rect x="452" y="98" width="5" height="7" fill="#dc2626" />
+                <text x="472" y="108" fill="#f8fafc" font-size="8.5" font-weight="700">Bandara Dewadaru ✈️</text>
+              </g>
+
+              <!-- Mangrove Conservation Forest in Kemujan -->
+              <path d="M 418 135 C 424 120, 430 110, 438 122 C 430 135, 422 142, 418 135 Z" fill="#1b4332"
+                opacity="0.7" />
+              <text x="408" y="112" fill="#86efac" font-size="8" class="map-label-italic">Hutan Mangrove</text>
+              <!-- Jembatan Kemujan (Mrican Bridge) -->
+              <line x1="405" y1="138" x2="412" y2="142" stroke="#f97316" stroke-width="4" stroke-linecap="round" />
+            </g>
+
+            <!-- 4. REAL MAIN ROAD NETWORK (Jalan Raya Karimunjawa-Kemujan in Google Maps Casing Style) -->
+            <g id="gmaps-roads">
+              <!-- Outer Gray Casing -->
+              <path
+                d="M 344 398 Q 350 375 358 355 T 348 310 Q 342 260 346 215 T 370 170 Q 390 150 408 140 T 435 125 T 455 110 T 485 68"
+                stroke="#475569" stroke-width="4.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+              <!-- Inner White Fill -->
+              <path
+                d="M 344 398 Q 350 375 358 355 T 348 310 Q 342 260 346 215 T 370 170 Q 390 150 408 140 T 435 125 T 455 110 T 485 68"
+                stroke="#ffffff" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+
+              <!-- Branch Road to Tanjung Gelam -->
+              <path d="M 348 310 Q 300 290 268 245 T 252 238" stroke="#475569" stroke-width="3.5" fill="none"
+                stroke-linecap="round" />
+              <path d="M 348 310 Q 300 290 268 245 T 252 238" stroke="#ffffff" stroke-width="2" fill="none"
+                stroke-linecap="round" />
+
+              <!-- Branch Road to Teluk Legon Lele -->
+              <path d="M 348 310 Q 375 270 392 255" stroke="#475569" stroke-width="3.5" fill="none"
+                stroke-linecap="round" />
+              <path d="M 348 310 Q 375 270 392 255" stroke="#ffffff" stroke-width="2" fill="none"
+                stroke-linecap="round" />
+            </g>
+
+            <!-- 5. EAST ATOLLS: PULAU CILIK & PULAU TENGAH (Destination #5) -->
+            <g id="isles-east">
+              <!-- Pulau Sintok (North-East) -->
+              <ellipse cx="670" cy="120" rx="9" ry="6" fill="#2d6a4f" stroke="#fef08a" stroke-width="1.5" />
+              <text x="670" y="110" fill="rgba(255,255,255,0.75)" font-size="8" text-anchor="middle">P. Sintok</text>
+
+              <!-- Pulau Tengah -->
+              <path d="M 710 206 C 722 210, 726 224, 718 234 C 710 240, 698 236, 696 226 C 695 215, 702 208, 710 206 Z"
+                fill="#2d6a4f" stroke="#fef08a" stroke-width="2.2" filter="url(#island-shadow)" />
+              <text x="710" y="248" fill="rgba(255,255,255,0.85)" font-size="9" font-weight="600"
+                text-anchor="middle">P. Tengah</text>
+
+              <!-- Pulau Cilik (Destination #5) with Iconic Long Wooden Jetty Pier -->
+              <path d="M 655 178 C 665 182, 668 194, 662 203 C 655 209, 646 207, 644 198 C 643 188, 648 180, 655 178 Z"
+                fill="#40916c" stroke="#fef08a" stroke-width="2.5" filter="url(#island-shadow)" />
+              <!-- Iconic Long Wooden Jetty Pier of Pulau Cilik -->
+              <line x1="646" y1="202" x2="628" y2="218" stroke="#78350f" stroke-width="3" stroke-linecap="round" />
+              <line x1="624" y1="214" x2="632" y2="222" stroke="#78350f" stroke-width="2.5" stroke-linecap="round" />
+              <ellipse cx="655" cy="192" rx="18" ry="14" fill="none" stroke="#38bdf8" stroke-dasharray="3,3"
+                stroke-width="1.5" />
+              <text x="655" y="170" fill="#fef08a" font-size="10" font-weight="800" text-anchor="middle">P. Cilik
+                🏝️</text>
+            </g>
+
+            <!-- 6. BOAT NAVIGATION EXPEDITION ROUTES (Jalur Laut Wisata) -->
+            <g id="boat-routes" stroke="rgba(255,255,255,0.4)" stroke-dasharray="4,4" stroke-width="1.5" fill="none">
+              <!-- Route to Menjangan Kecil -->
+              <path d="M 335 414 Q 295 425 268 425" />
+              <!-- Route to Cemara Kecil -->
+              <path d="M 335 414 Q 260 380 205 272" />
+              <!-- Route to Tanjung Gelam -->
+              <path d="M 205 272 Q 220 242 246 238" />
+              <!-- Route to Pulau Cilik & Tengah -->
+              <path d="M 436 156 Q 535 170 635 212" />
+            </g>
+
+            <!-- 7. CARTOGRAPHIC LABELS (Google Maps Clean Font Styles) -->
+            <text x="325" y="340" fill="#ffffff" font-size="13" font-weight="900" letter-spacing="1.5"
+              opacity="0.95">PULAU KARIMUNJAWA</text>
+            <text x="445" y="78" fill="#ffffff" font-size="11" font-weight="800" letter-spacing="1" opacity="0.95">P.
+              KEMUJAN</text>
+            <text x="710" y="490" fill="rgba(255,255,255,0.25)" font-size="20" font-weight="900" letter-spacing="4">LAUT
+              JAWA</text>
+          </svg>
+
+          <!-- Google Maps UI Chrome Overlays (80%+ Real Google Maps Feel) -->
+          <!-- 1. Top-Left Floating Google Maps Search & Info Card -->
+          <div class="gmaps-search-card">
+            <span class="gmaps-search-pin">📍</span>
+            <div class="gmaps-search-info">
+              <span class="gmaps-search-name">Taman Nasional Karimunjawa</span>
+              <span class="gmaps-search-meta">Kepulauan Karimunjawa, Jepara · 4.9 ⭐ (8.4rb)</span>
+            </div>
+            <span class="gmaps-search-badge">TNKJ</span>
+          </div>
+
+          <!-- Top-Right Compass Orientation Indicator -->
+          <div class="gmaps-compass" title="Arah Utara">
+            <span class="compass-n">U</span>
+            <div class="compass-arrow"></div>
+          </div>
+
+          <!-- 4. Bottom-Left Scale Bar & Real Geodetic Attribution -->
+          <div class="gmaps-scale-bar">
+            <div class="gmaps-ruler">
+              <span class="gmaps-ruler-tick"></span>
+              <span class="gmaps-ruler-bar"></span>
+              <span class="gmaps-ruler-tick"></span>
+            </div>
+            <span class="gmaps-ruler-label">3 km</span>
+            <span class="gmaps-attribution">5°51'42"LS 110°26'18"BT · Presisi Kartografi 80%+</span>
+          </div>
+
+          <!-- Interactive Pins Layer with Toggle Return Functionality -->
+          <div class="map-pins-layer">
+            <!-- Pin 1: Tanjung Gelam (Open & Close toggle) -->
+            <label for="gem-tanjung" class="map-pin pin-1 pin-1-open" title="Lihat Pantai Tanjung Gelam">
+              <span class="pin-marker">1</span>
+              <span class="pin-title">Tanjung Gelam</span>
+            </label>
+            <label for="gem-overview" class="map-pin pin-1 pin-1-close" title="Klik untuk kembali ke peta awal">
+              <span class="pin-marker">1</span>
+              <span class="pin-title">Tanjung Gelam</span>
+            </label>
+
+            <!-- Pin 2: Menjangan Kecil -->
+            <label for="gem-menjangan" class="map-pin pin-2 pin-2-open" title="Lihat Penangkaran Hiu Menjangan Kecil">
+              <span class="pin-marker">2</span>
+              <span class="pin-title">Menjangan Kecil</span>
+            </label>
+            <label for="gem-overview" class="map-pin pin-2 pin-2-close" title="Klik untuk kembali ke peta awal">
+              <span class="pin-marker">2</span>
+              <span class="pin-title">Menjangan Kecil</span>
+            </label>
+
+            <!-- Pin 3: Cemara Kecil -->
+            <label for="gem-cemara" class="map-pin pin-3 pin-3-open" title="Lihat Pulau Cemara Kecil">
+              <span class="pin-marker">3</span>
+              <span class="pin-title">Cemara Kecil</span>
+            </label>
+            <label for="gem-overview" class="map-pin pin-3 pin-3-close" title="Klik untuk kembali ke peta awal">
+              <span class="pin-marker">3</span>
+              <span class="pin-title">Cemara Kecil</span>
+            </label>
+
+            <!-- Pin 4: Bukit Love -->
+            <label for="gem-bukit" class="map-pin pin-4 pin-4-open" title="Lihat Bukit Love">
+              <span class="pin-marker">4</span>
+              <span class="pin-title">Bukit Love</span>
+            </label>
+            <label for="gem-overview" class="map-pin pin-4 pin-4-close" title="Klik untuk kembali ke peta awal">
+              <span class="pin-marker">4</span>
+              <span class="pin-title">Bukit Love</span>
+            </label>
+
+            <!-- Pin 5: Pulau Cilik -->
+            <label for="gem-cilik" class="map-pin pin-5 pin-5-open" title="Lihat Pulau Cilik">
+              <span class="pin-marker">5</span>
+              <span class="pin-title">Pulau Cilik</span>
+            </label>
+            <label for="gem-overview" class="map-pin pin-5 pin-5-close" title="Klik untuk kembali ke peta awal">
+              <span class="pin-marker">5</span>
+              <span class="pin-title">Pulau Cilik</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- Interactive Gem Details Presentation -->
+        <div class="gem-details-column">
+          <!-- Card 0: Default Overview State Card (Shown initially or after closing a gem) -->
+          <article class="gem-card card-overview">
+            <div class="gem-card-img-wrapper">
+              <img src="images/hero.jpg" alt="Peta Tinjauan Kepulauan Karimunjawa" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Peta Tinjauan Lengkap</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Eksplorasi 5 Hidden Gems Karimunjawa</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">27 Gugusan Pulau</span>
+                  <span class="gem-pill">5 Spot Unggulan</span>
+                  <span class="gem-pill">Konservasi Terumbu Karang</span>
+                </div>
+                <p class="gem-desc">
+                  Kepulauan Karimunjawa memiliki puluhan spot memikat. Pilih salah satu dari 5 destinasi di atas untuk
+                  melihat foto asli, rincian lokasi, dan estimasi waktu berkunjung. Klik kembali tombol yang aktif untuk
+                  kembali ke tinjauan peta ini.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Total Gugusan Pulau:</span>
+                  <div class="gem-meta-item-val">27 Pulau Tropis</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Musim Terbaik:</span>
+                  <div class="gem-meta-item-val">April - November (Ombak Tenang)</div>
+                </div>
+              </div>
+
+              <a href="#paket" class="btn-primary btn-full">Lihat Paket Wisata Karimunjawa</a>
+            </div>
+          </article>
+
+          <!-- Card 1: Pantai Tanjung Gelam -->
+          <article class="gem-card card-tanjung">
+            <div class="gem-card-img-wrapper">
+              <img src="images/sunset.jpg" alt="Pantai Tanjung Gelam saat Matahari Terbenam" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Golden Sunset Spot</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Pantai Tanjung Gelam</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">Kelapa Miring Ikonik</span>
+                  <span class="gem-pill">Pasir Putih Sehalus Tepung</span>
+                  <span class="gem-pill">Kuliner Kelapa Muda</span>
+                </div>
+                <p class="gem-desc">
+                  Terkenal dengan formasi pohon kelapa miring yang menghadap langsung ke lautan luas. Tanjung Gelam
+                  adalah puncak penutup hari terbaik untuk menikmati gradasi jingga sunset Laut Jawa sambil menyeruput
+                  kelapa muda segar.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Waktu Terbaik:</span>
+                  <div class="gem-meta-item-val">16:30 - 18:00 WIB</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Akses Perjalanan:</span>
+                  <div class="gem-meta-item-val">25 Menit Jalur Darat/Laut</div>
+                </div>
+              </div>
+
+              <a href="#reservasi" class="btn-primary btn-full">Kunjungi Destinasi Ini</a>
+            </div>
+          </article>
+
+          <!-- Card 2: Pulau Menjangan Kecil -->
+          <article class="gem-card card-menjangan">
+            <div class="gem-card-img-wrapper">
+              <img src="images/snorkeling.jpg" alt="Snorkeling dan Penangkaran Hiu Menjangan Kecil" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Sanctuary & Reef</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Pulau Menjangan Kecil</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">Berenang Bareng Hiu</span>
+                  <span class="gem-pill">Spot Terumbu Karang Kima</span>
+                  <span class="gem-pill">Pemberian Makan Ikan</span>
+                </div>
+                <p class="gem-desc">
+                  Pusat konservasi hiu sirip hitam (blacktip reef shark) yang ramah wisatawan. Anda dapat merasakan
+                  sensasi berenang langsung di kolam hiu alami dengan dampingan pemandu bersertifikasi keselamatan.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Waktu Terbaik:</span>
+                  <div class="gem-meta-item-val">09:00 - 14:00 WIB</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Akses Perahu Wisata:</span>
+                  <div class="gem-meta-item-val">20 Menit dari Dermaga Wisata</div>
+                </div>
+              </div>
+
+              <a href="#reservasi" class="btn-primary btn-full">Kunjungi Destinasi Ini</a>
+            </div>
+          </article>
+
+          <!-- Card 3: Pulau Cemara Kecil -->
+          <article class="gem-card card-cemara">
+            <div class="gem-card-img-wrapper">
+              <img src="images/sandbar.jpg" alt="Pulau Cemara Kecil dan Gosong Pasir Timbul" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Laguna Turquoise</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Pulau Cemara Kecil & Gosong Pasir</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">Pasir Timbul di Tengah Laut</span>
+                  <span class="gem-pill">Makan Siang BBQ Ikan Bakar</span>
+                  <span class="gem-pill">Foto Drone Aesthetic</span>
+                </div>
+                <p class="gem-desc">
+                  Pulau tak berpenghuni dengan air laut sejernih kaca kristal. Tempat favorit tim Jelajah Karimunjawa
+                  untuk menyajikan santap siang ikan bakar segar bumbu khas nelayan Karimunjawa di bawah naungan pohon
+                  cemara laut.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Waktu Terbaik:</span>
+                  <div class="gem-meta-item-val">11:00 - 14:00 WIB (Surut)</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Akses Perahu Wisata:</span>
+                  <div class="gem-meta-item-val">35 Menit dari Karimunjawa</div>
+                </div>
+              </div>
+
+              <a href="#reservasi" class="btn-primary btn-full">Kunjungi Destinasi Ini</a>
+            </div>
+          </article>
+
+          <!-- Card 4: Bukit Love & Bukit Joko Tuwo -->
+          <article class="gem-card card-bukit">
+            <div class="gem-card-img-wrapper">
+              <img src="images/bukit_love.jpg" alt="Panorama Bukit Love Menghadap Lautan" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Panoramic 360°</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Bukit Love & Panorama Samudra</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">Pemandangan Seluruh Gugusan Pulau</span>
+                  <span class="gem-pill">Monumen Ikonik KARIMUNJAWA</span>
+                  <span class="gem-pill">Cafe Sunset Santai</span>
+                </div>
+                <p class="gem-desc">
+                  Berdiri di ketinggian bukit dan nikmati cakrawala Laut Jawa dari sudut terbaik. Dari sini terlihat
+                  jelas gradasi warna air laut biru tua, turquoise, hingga toska terang yang melingkari pulau-pulau
+                  kecil.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Waktu Terbaik:</span>
+                  <div class="gem-meta-item-val">06:00 (Sunrise) atau 16:30 (Sunset)</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Akses Perjalanan:</span>
+                  <div class="gem-meta-item-val">10 Menit dari Pusat Alun-Alun</div>
+                </div>
+              </div>
+
+              <a href="#reservasi" class="btn-primary btn-full">Kunjungi Destinasi Ini</a>
+            </div>
+          </article>
+
+          <!-- Card 5: Pulau Cilik -->
+          <article class="gem-card card-cilik">
+            <div class="gem-card-img-wrapper">
+              <img src="images/pulau_cilik.jpg" alt="Dermaga Kayu dan Terumbu Karang Pulau Cilik" class="gem-card-img"
+                referrerpolicy="no-referrer">
+              <span class="gem-card-badge">Nemo Coral Garden</span>
+            </div>
+            <div class="gem-card-body">
+              <div>
+                <h3 class="gem-title">Pulau Cilik & Karang Kima</h3>
+                <div class="gem-highlight-list">
+                  <span class="gem-pill">Habitat Ikan Badut (Nemo)</span>
+                  <span class="gem-pill">Dermaga Kayu Estetik</span>
+                  <span class="gem-pill">Terumbu Karang Kipas</span>
+                </div>
+                <p class="gem-desc">
+                  Terletak di bagian timur kepulauan, Pulau Cilik memiliki keanekaragaman hayati laut paling melimpah.
+                  Ratusan anemon laut dihuni koloni clownfish ceria serta dermaga kayu estetik di atas air toska jernih.
+                </p>
+              </div>
+
+              <div class="gem-meta-grid">
+                <div>
+                  <span class="gem-meta-item-label">Waktu Terbaik:</span>
+                  <div class="gem-meta-item-val">08:30 - 11:30 WIB</div>
+                </div>
+                <div>
+                  <span class="gem-meta-item-label">Akses Perahu Wisata:</span>
+                  <div class="gem-meta-item-val">45 Menit Jalur Timur</div>
+                </div>
+              </div>
+
+              <a href="#reservasi" class="btn-primary btn-full">Kunjungi Destinasi Ini</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curated Tour Packages Section -->
+  <section id="paket" class="packages-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-kicker">Pilihan Perjalanan Terbaik</span>
+        <h2 class="section-title">Paket Wisata Jelajah Karimunjawa</h2>
+        <p class="section-desc center-block">
+          Paket liburan all-inclusive tanpa ribet. Sudah termasuk tiket penyeberangan kapal PP, akomodasi, kapal tour,
+          makan, perlengkapan snorkeling, dan pemandu lokal.
+        </p>
+      </div>
+
+      <div class="packages-grid">
+        <!-- Package 1: Open Trip 3D2N -->
+        <div class="package-card">
+          <div class="package-header">
+            <div class="package-type">Paket Favorit Backpacker & Solo Traveler</div>
+            <h3 class="package-name">Open Trip 3 Hari 2 Malam</h3>
+            <div class="package-price-wrap">
+              <span class="package-currency">Rp</span>
+              <span class="package-price">950.000</span>
+              <span class="package-unit">/ orang</span>
+            </div>
+          </div>
+
+          <div class="package-features">
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Tiket Kapal Express Bahari PP Jepara - Karimunjawa</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Penginapan Homestay AC (Kamar Mandi Dalam)</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Perahu Wisata Tradisional untuk Island Hopping 2 Hari</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Makan 6x termasuk Tradisional BBQ Ikan Bakar di Pulau</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Alat Snorkeling Lengkap & Pelampung Standar ISO</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Dokumentasi Underwater GoPro & Kamera Mirrorless</span>
+            </div>
+          </div>
+
+          <!-- Pure HTML Details / Summary Itinerary Accordion -->
+          <div class="package-itinerary">
+            <details>
+              <summary>Lihat Rincian Jadwal (Itinerary)</summary>
+              <div class="itinerary-content">
+                <div class="itinerary-day"><strong>Hari 1:</strong> Kapal Express tiba di Karimunjawa, check-in
+                  homestay, sunset Pantai Tanjung Gelam, kuliner malam Alun-Alun.</div>
+                <div class="itinerary-day"><strong>Hari 2:</strong> Snorkeling spot Maer Nemo, makan siang BBQ di Pulau
+                  Cemara, berenang di Penangkaran Hiu Menjangan Kecil.</div>
+                <div class="itinerary-day"><strong>Hari 3:</strong> Bukit Love, belanja oleh-oleh khas Karimunjawa,
+                  penyeberangan kembali ke Jepara.</div>
+              </div>
+            </details>
+          </div>
+
+          <div class="package-action">
+            <a href="#reservasi" class="btn-primary btn-full">Pilih Open Trip 3D2N</a>
+          </div>
+        </div>
+
+        <!-- Package 2: Private Tour 3D2N (Featured) -->
+        <div class="package-card featured">
+          <div class="featured-ribbon">Paling Diminati & Fleksibel</div>
+          <div class="package-header">
+            <div class="package-type">Paket Keluarga & Rombongan Teman</div>
+            <h3 class="package-name">Private Tour 3 Hari 2 Malam</h3>
+            <div class="package-price-wrap">
+              <span class="package-currency">Rp</span>
+              <span class="package-price">1.450.000</span>
+              <span class="package-unit">/ orang (Min. 4 pax)</span>
+            </div>
+          </div>
+
+          <div class="package-features">
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Perahu Wisata Eksklusif (Tidak Digabung Wisatawan Lain)</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Hotel / Resort Bintang 3 Tepi Pantai</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Tiket Kapal Express Bahari Kelas Executive PP</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Pemandu Wisata Pribadi & Fotografer Berpengalaman</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Makan Lengkap 6x Termasuk Seafood Feast & BBQ Khusus</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Dokumentasi Drone Aerial 4K + GoPro Hero 11</span>
+            </div>
+          </div>
+
+          <div class="package-itinerary">
+            <details>
+              <summary>Lihat Rincian Jadwal (Itinerary)</summary>
+              <div class="itinerary-content">
+                <div class="itinerary-day"><strong>Hari 1:</strong> Penjemputan VIP di dermaga, check-in resort, tour
+                  darat Pantai Bobby & sunset Tanjung Gelam.</div>
+                <div class="itinerary-day"><strong>Hari 2:</strong> Private boat tour Pulau Cilik, Pulau Cilik reef, BBQ
+                  cumi & ikan segar di Cemara Besar, shark nursery.</div>
+                <div class="itinerary-day"><strong>Hari 3:</strong> Sunrise spot Bukit Joko Tuwo, check-out, pengantaran
+                  VIP ke pelabuhan Express Bahari.</div>
+              </div>
+            </details>
+          </div>
+
+          <div class="package-action">
+            <a href="#reservasi" class="btn-primary btn-full">Pilih Private Tour 3D2N</a>
+          </div>
+        </div>
+
+        <!-- Package 3: One Day Snorkeling Safari -->
+        <div class="package-card">
+          <div class="package-header">
+            <div class="package-type">Paket Trip Cepat Wisatawan Lokal</div>
+            <h3 class="package-name">One Day Snorkeling Safari</h3>
+            <div class="package-price-wrap">
+              <span class="package-currency">Rp</span>
+              <span class="package-price">450.000</span>
+              <span class="package-unit">/ orang</span>
+            </div>
+          </div>
+
+          <div class="package-features">
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Island Hopping 4 Spot Utama (08:30 - 17:30 WIB)</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Makan Siang BBQ Ikan Segar di Pulau Tak Berpenghuni</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Full Set Masker, Snorkel, Fin (Kaki Katak), & Pelampung</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Tiket Masuk Semua Spot Wisata & Penangkaran Hiu</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Foto & Video Underwater Sepuasnya</span>
+            </div>
+            <div class="feature-item">
+              <svg class="feature-check" viewBox="0 0 20 20">
+                <path d="M0 11l2-2 5 5L18 3l2 2L7 18z" />
+              </svg>
+              <span>Pemandu Snorkeling Berlisensi & P3K Lengkap</span>
+            </div>
+          </div>
+
+          <div class="package-itinerary">
+            <details>
+              <summary>Lihat Rincian Jadwal (Itinerary)</summary>
+              <div class="itinerary-content">
+                <div class="itinerary-day"><strong>08:30:</strong> Berkumpul di Dermaga Rakyat, briefing keselamatan
+                  snorkeling.</div>
+                <div class="itinerary-day"><strong>09:30 - 14:00:</strong> Snorkeling Spot Maer, santap siang BBQ Ikan
+                  Bakar di Cemara Kecil.</div>
+                <div class="itinerary-day"><strong>14:30 - 17:30:</strong> Renang bersama hiu di Menjangan Kecil,
+                  ditutup sunset di Pantai Ujung Gelam.</div>
+              </div>
+            </details>
+          </div>
+
+          <div class="package-action">
+            <a href="#reservasi" class="btn-primary btn-full">Pilih Snorkeling Safari</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tour Guide Highlights & Value Pillars -->
+  <section id="keunggulan" class="why-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-kicker">Standar Pelayanan Prima</span>
+        <h2 class="section-title">Kenapa Menjelajah Bersama Kami?</h2>
+        <p class="section-desc center-block">
+          Kami lahir dan dibesarkan di Karimunjawa. Kecintaan kami pada kelestarian alam dan kepuasan Anda adalah
+          prioritas utama setiap perjalanan.
+        </p>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <h3 class="why-title">Pemandu Lokal Berlisensi</h3>
+          <p class="why-desc">
+            Didampingi langsung oleh pemandu asli pulau yang menguasai titik karang tersembunyi, arus laut teraman,
+            serta bersertifikat HPI (Himpunan Pramuwisata Indonesia).
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z" />
+              <circle cx="12" cy="13" r="4" />
+            </svg>
+          </div>
+          <h3 class="why-title">Dokumentasi Pro Gratis</h3>
+          <p class="why-desc">
+            Hasil foto dan video resolusi tinggi underwater menggunakan GoPro Hero 11 dan drone 4K sudah termasuk tanpa
+            biaya tambahan. File langsung ditransfer di hari yang sama.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="m4.93 4.93 4.24 4.24" />
+              <path d="m14.83 9.17 4.24-4.24" />
+              <path d="m14.83 14.83 4.24 4.24" />
+              <path d="m9.17 14.83-4.24 4.24" />
+            </svg>
+          </div>
+          <h3 class="why-title">Peralatan Steril & Higienis</h3>
+          <p class="why-desc">
+            Mouthpiece snorkel selalu disanitasi menyeluruh setelah setiap trip. Pelampung dan fin snorkeling dicek
+            kelayakannya berkala demi keselamatan maksimal.
+          </p>
+        </div>
+
+        <div class="why-card">
+          <div class="why-icon-box">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+            </svg>
+          </div>
+          <h3 class="why-title">BBQ Ikan Segar di Pulau</h3>
+          <p class="why-desc">
+            Sensasi makan siang ikan bakar segar yang dibeli langsung dari nelayan lokal, dibakar di pinggir pantai
+            pulau tak berpenghuni dengan sambal terasi khas pesisir.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery Showcase Snippet linking to dedicated Gallery Page -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-kicker">Momen Nyata Wisatawan</span>
+        <h2 class="section-title">Dokumentasi Keindahan Karimunjawa</h2>
+        <p class="section-desc center-block">
+          Kejernihan air laut, terumbu karang yang sehat, dan hangatnya keramahan lokal menanti kedatangan Anda.
+        </p>
+      </div>
+
+      <div class="gallery-grid">
+        <div class="gallery-item gallery-item-hero">
+          <img src="images/hero.jpg" alt="Perahu Tradisional di Air Jernih Karimunjawa" referrerpolicy="no-referrer">
+          <div class="gallery-caption">Dermaga & Perahu Nelayan Tradisional di Atas Air Toska</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/snorkeling.jpg" alt="Terumbu Karang Alami dan Ikan Anemon" referrerpolicy="no-referrer">
+          <div class="gallery-caption">Taman Bawah Laut Karimunjawa</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/sandbar.jpg" alt="Pemandangan Udara Pulau Pasir Timbul" referrerpolicy="no-referrer">
+          <div class="gallery-caption">Gosong Pasir Cemara Kecil</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/sunset.jpg" alt="Pohon Kelapa dan Sunset Tanjung Gelam" referrerpolicy="no-referrer">
+          <div class="gallery-caption">Matahari Terbenam di Tanjung Gelam</div>
+        </div>
+        <div class="gallery-item">
+          <img src="images/bukit_love.jpg" alt="Pemandangan Bukit Love" referrerpolicy="no-referrer">
+          <div class="gallery-caption">Panorama 360° Bukit Love</div>
+        </div>
+      </div>
+
+      <div class="text-center gallery-more-link">
+        <a href="gallery.html" class="btn-primary">Lihat Galeri Foto Lengkap Karimunjawa &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="reviews-section">
+    <div class="container">
+      <div class="text-center">
+        <span class="section-kicker">Pengalaman Mereka</span>
+        <h2 class="section-title">Cerita Para Penjelajah</h2>
+        <p class="section-desc center-block">
+          Ulasan jujur dari wisatawan yang telah mempercayakan liburan impiannya bersama Jelajah Karimunjawa.
+        </p>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Pemandunya Mas Joko super sabar ngajarin aku yang awalnya takut nyemplung ke laut! Hasil foto
+              underwater-nya jernih banget, kayak di film dokumenter. Ikan bakar di Cemara Kecil bener-bener juara
+              enaknya!"
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">AD</div>
+            <div class="author-info">
+              <h5>Anindya Daniswara</h5>
+              <p>Wisatawan Jakarta · Paket Open Trip 3D2N</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Kami ambil paket Private Tour untuk keluarga dengan 2 anak kecil. Jadwalnya sangat fleksibel, kapalnya
+              bersih dan luas, safety gear pelampung anak juga pas. Anak-anak seneng banget berenang lihat nemo dan
+              hiu!"
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">BP</div>
+            <div class="author-info">
+              <h5>Bambang Prasetyo</h5>
+              <p>Wisatawan Surabaya · Paket Private Family 3D2N</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <div>
+            <div class="review-stars">★★★★★</div>
+            <p class="review-text">
+              "Pengalaman terbaik island hopping! Pas ke gosong pasir pas air lagi surut, foto drone hasilnya gokil
+              abis. Pemandu lokalnya paham banget spot snorkeling yang sepi dari rombongan lain."
+            </p>
+          </div>
+          <div class="review-author">
+            <div class="author-avatar">MS</div>
+            <div class="author-info">
+              <h5>Maulana Sidik</h5>
+              <p>Wisatawan Bandung · Paket Snorkeling Safari</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Highly Responsive Booking & WhatsApp Inquiry Section -->
+  <section id="reservasi" class="booking-section">
+    <div class="container">
+      <div class="booking-card">
+        <!-- Info Pane -->
+        <div class="booking-info-pane">
+          <div>
+            <span class="hero-tag">Layanan Pelanggan 24/7</span>
+            <h2 class="booking-info-title">Siap Liburan ke Karimunjawa?</h2>
+            <p class="booking-info-desc">
+              Konsultasikan rencana tanggal keberangkatan, kapasitas rombongan, atau pesan paket khusus sesuai
+              preferensi Anda. Tim kami siap merespons cepat via WhatsApp atau telepon.
+            </p>
+
+            <div class="booking-contact-list">
+              <div class="booking-contact-item">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>WhatsApp: +62 895-3953-14851</span>
+              </div>
+              <div class="booking-contact-item">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <span>Email: halo@jelajahkarimunjawa.id</span>
+              </div>
+              <div class="booking-contact-item">
+                <svg class="contact-icon-svg" viewBox="0 0 24 24">
+                  <path
+                    d="M12 2a8 8 0 0 0-8 8c0 5 8 12 8 12s8-7 8-12a8 8 0 0 0-8-8zm0 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                </svg>
+                <span>Kantor: Jl. Pelabuhan Wisata No. 14, Karimunjawa, Jepara</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-disclaimer">
+            <p class="booking-disclaimer-text">
+              *Pembayaran resmi hanya melalui rekening terverifikasi PT Jelajah Karimunjawa Wisata. Bebas biaya
+              konsultasi.
+            </p>
+          </div>
+        </div>
+
+        <!-- Form Pane (Highly responsive for mobile, zero cutoffs) -->
+        <div class="booking-form-pane">
+          <form action="https://api.whatsapp.com/send" method="get" target="_blank">
+            <input type="hidden" name="phone" value="62895395314851">
+
+            <div class="form-grid">
+              <div>
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" id="nama" class="form-control" placeholder="Contoh: Budi Santoso" required>
+              </div>
+
+              <div>
+                <label for="nohp" class="form-label">Nomor WhatsApp / HP</label>
+                <input type="tel" id="nohp" class="form-control" placeholder="0812xxxxxxxx" required>
+              </div>
+
+              <div>
+                <label for="paket-select" class="form-label">Pilihan Paket Wisata</label>
+                <select id="paket-select" class="form-control" required>
+                  <option value="Open Trip 3D2N">Open Trip 3D2N (Rp 950rb/org)</option>
+                  <option value="Private Tour 3D2N" selected>Private Tour 3D2N (Rp 1.45jt/org)</option>
+                  <option value="One Day Snorkeling Safari">One Day Snorkeling Safari (Rp 450rb/org)</option>
+                  <option value="Custom Private Island">Custom Trip Rombongan Khusus</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="peserta" class="form-label">Jumlah Peserta</label>
+                <select id="peserta" class="form-control" required>
+                  <option value="1">1 Orang (Solo Traveler)</option>
+                  <option value="2">2 Orang (Pasangan)</option>
+                  <option value="3-5" selected>3 - 5 Orang (Teman / Keluarga)</option>
+                  <option value="6-10">6 - 10 Orang (Grup Kecil)</option>
+                  <option value=">10">Lebih dari 10 Orang (Gathering)</option>
+                </select>
+              </div>
+
+              <div class="form-group-full">
+                <label for="tanggal" class="form-label">Rencana Tanggal Keberangkatan</label>
+                <input type="date" id="tanggal" class="form-control" required>
+              </div>
+
+              <div class="form-group-full">
+                <label for="catatan" class="form-label">Catatan Tambahan (Penginapan/Diet/Permintaan Khusus)</label>
+                <textarea id="catatan" class="form-control" rows="3"
+                  placeholder="Contoh: Butuh kamar private di resort pinggir pantai dan penjemputan dari Jepara"></textarea>
+              </div>
+
+              <div class="form-group-full">
+                <input type="hidden" name="text"
+                  value="Halo Jelajah Karimunjawa! Saya ingin reservasi paket wisata kepulauan Karimunjawa. Mohon info ketersediaan slot kapal dan penginapan.">
+                <button type="submit" class="btn-primary btn-full">
+                  Kirim Reservasi ke WhatsApp Resmi
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Floating WhatsApp Quick Action Button (CSS Only) -->
+  <a href="https://api.whatsapp.com/send?phone=62895395314851&text=Halo%20Jelajah%20Karimunjawa,%20saya%20tertarik%20tanya%20paket%20wisata%20pulau"
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Konsultasi cepat lewat WhatsApp">
+    <span class="wa-tooltip">Tanya Paket Wisata (Respon Cepat)</span>
+    <div class="wa-btn-circle">
+      <span class="wa-pulse-ring"></span>
+      <svg class="wa-icon-svg" viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </div>
+  </a>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Jelajah Karimunjawa</h4>
+          <p>
+            Agency pemandu wisata dan penyedia paket wisata resmi Karimunjawa. Mengedepankan keamanan maritim, keramahan
+            lokal, dan pelestarian ekosistem terumbu karang.
+          </p>
+          <span class="footer-badge">
+            Terdaftar di Disporapar Kab. Jepara
+          </span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Eksplorasi</h5>
+          <ul class="footer-links">
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#hidden-gems">Peta Hidden Gems</a></li>
+            <li><a href="#paket">Paket Open Trip</a></li>
+            <li><a href="#paket">Paket Private Tour</a></li>
+            <li><a href="gallery.html">Galeri Foto Karimunjawa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Destinasi Populer</h5>
+          <ul class="footer-links">
+            <li><a href="#hidden-gems">Pantai Tanjung Gelam</a></li>
+            <li><a href="#hidden-gems">Pulau Menjangan Kecil</a></li>
+            <li><a href="#hidden-gems">Gosong Cemara Kecil</a></li>
+            <li><a href="#hidden-gems">Bukit Love Karimunjawa</a></li>
+            <li><a href="#hidden-gems">Pulau Cilik & Kima</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kantor & Bantuan</h5>
+          <ul class="footer-links">
+            <li><a href="#reservasi">Hubungi Kami</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=6281234567890" target="_blank">Chat WhatsApp CS</a></li>
+            <li><a href="#keunggulan">Prosedur Keselamatan</a></li>
+            <li><a href="#reservasi">Kebijakan Pembatalan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jelajah Karimunjawa Tour & Travel. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div>
+          Jepara · Kepulauan Karimunjawa, Jawa Tengah, Indonesia
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

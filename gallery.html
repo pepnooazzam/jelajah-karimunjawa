@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Foto Karimunjawa | Jelajah Karimunjawa</title>
+  <meta name="description"
+    content="Koleksi foto dokumentasi liburan dan keindahan kepulauan tropis Karimunjawa: terumbu karang, penangkaran hiu, sunset Tanjung Gelam, dan pulau pasir timbul.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- Top Navigation Bar (Fixed with Drop-Shadow, Spacious Margins, 1 Single CTA) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="index.html#beranda" class="nav-brand">
+        <svg class="brand-icon-svg" viewBox="0 0 24 24">
+          <path d="M2 18c3-1.5 6-1.5 9 0s6 1.5 9 0 2-1 2-1" />
+          <path d="M2 14c3-1.5 6-1.5 9 0s6 1.5 9 0 2-1 2-1" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+        <span>Jelajah <span class="brand-accent">Karimunjawa</span></span>
+      </a>
+
+      <!-- Pure CSS Hamburger Checkbox Trigger -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-checkbox" aria-label="Toggle navigation menu">
+      <label for="nav-toggle" class="nav-toggle-label">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </label>
+
+      <!-- Navigation Menu -->
+      <nav class="nav-menu">
+        <a href="index.html#beranda" class="nav-link">Beranda</a>
+        <a href="index.html#hidden-gems" class="nav-link">Peta Hidden Gems</a>
+        <a href="index.html#paket" class="nav-link">Paket Wisata</a>
+        <a href="index.html#keunggulan" class="nav-link">Pengalaman</a>
+        <a href="gallery.html" class="nav-link nav-link-gallery active">Galeri Foto</a>
+        <a href="index.html#reservasi" class="nav-link">Reservasi</a>
+
+        <!-- CTA moved inside Hamburger Menu for Tablet and Mobile -->
+        <div class="nav-mobile-cta">
+          <a href="index.html#reservasi" class="btn-primary">Pesan Sekarang</a>
+        </div>
+      </nav>
+
+      <!-- Desktop-Only Primary Action at Navbar -->
+      <div class="nav-desktop-actions">
+        <a href="index.html#reservasi" class="btn-primary">Pesan Sekarang</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Gallery Page Header Banner -->
+  <section class="gallery-page-header">
+    <div class="container">
+      <span class="section-kicker">Koleksi Visual Dokumentasi</span>
+      <h1 class="section-title">Galeri Foto Keindahan Karimunjawa</h1>
+      <p class="section-desc center-block">
+        Potret nyata keindahan surga tropis Laut Jawa. Dari terumbu karang hidup, penyu hijau, gosong pasir timbul,
+        hingga panorama matahari terbenam paling memukau.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Photo Gallery Section -->
+  <main class="container">
+    <div class="gallery-page-grid">
+      <!-- Photo 1: Sunset Tanjung Gelam -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/sunset.jpg" alt="Pemandangan Sunset di Pantai Tanjung Gelam" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Sunset & Pesisir</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Matahari Terbenam Tanjung Gelam</h2>
+            <p class="gallery-card-desc">
+              Gradasi langit jingga keemasan dengan siluet pohon kelapa miring yang menjadi ciri khas lanskap
+              Karimunjawa.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Pantai Tanjung Gelam</span>
+            <span>Waktu: 17:30 WIB</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 2: Underwater Coral Reef -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/snorkeling.jpg" alt="Terumbu Karang Alami dan Ikan Badut Nemo" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Bawah Laut & Coral</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Taman Bawah Laut & Ikan Badut</h2>
+            <p class="gallery-card-desc">
+              Keanekaragaman terumbu karang anemon dan ikan badut (Nemo) di zona konservasi Taman Nasional Karimunjawa.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Spot Snorkeling Maer</span>
+            <span>Kedalaman: 2 - 4 Meter</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 3: Pulau Sandbar Cemara Kecil -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/sandbar.jpg" alt="Pemandangan Udara Pulau Cemara Kecil" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Pulau Tak Berpenghuni</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Gosong Pasir Timbul Cemara Kecil</h2>
+            <p class="gallery-card-desc">
+              Hamparan pulau pasir putih yang dikelilingi laguna dangkal berwarna hijau toska dan biru kristal.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Perairan Cemara Kecil</span>
+            <span>Akses: Perahu Wisata 35 Menit</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 4: Bukit Love Viewpoint -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/bukit_love.jpg" alt="Panorama Gugusan Kepulauan dari Bukit Love"
+            referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Panorama & Perbukitan</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Gardu Pandang 360° Bukit Love</h2>
+            <p class="gallery-card-desc">
+              Melihat seluruh bentang gugusan 27 pulau tropis Karimunjawa dari anjungan kayu di atas bukit hijau.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Bukit Love Karimunjawa</span>
+            <span>Ketinggian: 150 mdpl</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 5: Pulau Cilik Wooden Jetty -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/pulau_cilik.jpg" alt="Dermaga Kayu dan Air Jernih Pulau Cilik" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Dermaga & Pantai Tropis</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Dermaga Panjang Pulau Cilik</h2>
+            <p class="gallery-card-desc">
+              Dermaga kayu estetik di perairan timur dengan visibilitas air sejernih akuarium raksasa.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Pulau Cilik</span>
+            <span>Aktivitas: Snorkeling & Foto</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 6: Sea Turtle Underwater -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/sea_turtle.jpg" alt="Penyu Hijau Berenang di Perairan Karimunjawa"
+            referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Fauna Laut Dilindungi</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Penyu Hijau (Chelonia Mydas)</h2>
+            <p class="gallery-card-desc">
+              Satwa laut eksotis yang sering dijumpai saat snorkeling di sekitar terumbu karang kepulauan.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Konservasi Menjangan</span>
+            <span>Status: Dilindungi Penuh</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 7: Mangrove Forest Boardwalk -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/mangrove.jpg" alt="Tracking Jembatan Kayu Hutan Mangrove" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Ekowisata Hutan Bakau</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Jalur Tracking Hutan Mangrove</h2>
+            <p class="gallery-card-desc">
+              Jembatan kayu sepanjang 2 kilometer membelah hutan bakau alami yang asri dan sejuk.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: TN Karimunjawa Kemujan</span>
+            <span>Panjang Jalur: 2.000 Meter</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Photo 8: Traditional Boat & Island Shore -->
+      <article class="gallery-card">
+        <div class="gallery-card-img-wrap">
+          <img src="images/hero.jpg" alt="Perahu Kayu Tradisional di Tepi Pantai" referrerpolicy="no-referrer">
+          <span class="gallery-tag-pill">Budaya & Island Hopping</span>
+        </div>
+        <div class="gallery-card-content">
+          <div>
+            <h2 class="gallery-card-title">Perahu Wisata Kayu Tradisional</h2>
+            <p class="gallery-card-desc">
+              Armada perahu kayu tradisional yang menemani setiap penjelajahan pulau dengan nyaman dan aman.
+            </p>
+          </div>
+          <div class="gallery-card-footer">
+            <span>Lokasi: Dermaga Wisata Karimunjawa</span>
+            <span>Kapasitas: 15 - 20 Penumpang</span>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- MORE GALLERY PFOTO NO CARD -->
+    <div class="galery-grid-photo">
+      <div class="foto-box"><img src="images/1.jpg" alt="snorkling"></div>
+      <div class="foto-box"><img src="images/10.jpg" alt="pantai"></div>
+      <div class="foto-box"><img src="images/4.jpg" alt="kano karimunjawa"></div>
+      <div class="foto-box"><img src="images/5.jpg" alt="pulau karimunjawa"></div>
+      <div class="foto-box"><img src="images/6.jpg" alt="drone view pantai"></div>
+      <div class="foto-box"><img src="images/7.jpg" alt="foto dikapal pulau kecil"></div>
+      <div class="foto-box"><img src="images/8.jpg" alt="pulau karimunjawa pantai"></div>
+      <div class="foto-box"><img src="images/9.jpg" alt="Foto 9"></div>
+      <div class="foto-box"><img src="images/2.jpg" alt="snorkling-terumbukarang"></div>
+      <div class="foto-box"><img src="images/11.jpg" alt="sunset dikarimunjawa"></div>
+      <div class="foto-box"><img src="images/12.jpg" alt="sunset view karimunjawa"></div>
+      <div class="foto-box"><img src="images/13.jpg" alt="view pantai saat sunset"></div>
+      <div class="foto-box"><img src="images/14.jpg" alt="dront view boat"></div>
+      <div class="foto-box"><img src="images/15.jpg" alt="beach view"></div>
+    </div>
+
+
+    <!-- Call to Action Banner -->
+    <div class="gallery-cta-banner">
+      <h3 class="gallery-cta-title">Ingin Punya Foto Estetik Seperti Ini?</h3>
+      <p class="gallery-cta-desc">
+        Semua paket wisata kami sudah termasuk dokumentasi gratis kamera underwater GoPro dan drone 4K tanpa biaya
+        tersembunyi.
+      </p>
+      <div class="gallery-cta-buttons">
+        <a href="index.html#paket" class="btn-primary">Pilih Paket Wisata Sekarang</a>
+        <a href="index.html#reservasi" class="btn-secondary">Hubungi Pemandu Kami</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Floating WhatsApp Quick Action Button (CSS Only) -->
+  <a href="https://api.whatsapp.com/send?phone=62895395314851&text=Halo%20Jelajah%20Karimunjawa,%20saya%20melihat%20galeri%20foto%20dan%20tertarik%20pesan%20paket%20wisata"
+    class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Konsultasi cepat lewat WhatsApp">
+    <span class="wa-tooltip">Tanya Paket Wisata (Respon Cepat)</span>
+    <div class="wa-btn-circle">
+      <span class="wa-pulse-ring"></span>
+      <svg class="wa-icon-svg" viewBox="0 0 24 24">
+        <path
+          d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z" />
+      </svg>
+    </div>
+  </a>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <h4>Jelajah Karimunjawa</h4>
+          <p>
+            Agency pemandu wisata dan penyedia paket wisata resmi Karimunjawa. Mengedepankan keamanan maritim, keramahan
+            lokal, dan pelestarian ekosistem terumbu karang.
+          </p>
+          <span class="footer-badge">
+            Terdaftar di Disporapar Kab. Jepara
+          </span>
+        </div>
+
+        <div class="footer-col">
+          <h5>Eksplorasi</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#beranda">Beranda</a></li>
+            <li><a href="index.html#hidden-gems">Peta Hidden Gems</a></li>
+            <li><a href="index.html#paket">Paket Open Trip</a></li>
+            <li><a href="index.html#paket">Paket Private Tour</a></li>
+            <li><a href="gallery.html">Galeri Foto Karimunjawa</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Destinasi Populer</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#hidden-gems">Pantai Tanjung Gelam</a></li>
+            <li><a href="index.html#hidden-gems">Pulau Menjangan Kecil</a></li>
+            <li><a href="index.html#hidden-gems">Gosong Cemara Kecil</a></li>
+            <li><a href="index.html#hidden-gems">Bukit Love Karimunjawa</a></li>
+            <li><a href="index.html#hidden-gems">Pulau Cilik & Kima</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h5>Kantor & Bantuan</h5>
+          <ul class="footer-links">
+            <li><a href="index.html#reservasi">Hubungi Kami</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=62895395314851" target="_blank">Chat WhatsApp CS</a></li>
+            <li><a href="index.html#keunggulan">Prosedur Keselamatan</a></li>
+            <li><a href="index.html#reservasi">Kebijakan Pembatalan</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Jelajah Karimunjawa Tour & Travel. Hak Cipta Dilindungi Undang-Undang.
+        </div>
+        <div>
+          Jepara · Kepulauan Karimunjawa, Jawa Tengah, Indonesia
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
